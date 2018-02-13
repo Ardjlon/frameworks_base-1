@@ -85,6 +85,7 @@ public class BatteryMeterView extends LinearLayout implements
     private boolean mShouldEnablePercentInsideIcon;
     private boolean mCharging;
     private boolean mPowerSave;
+    private boolean mForceShowPercent;
 
     private int mDarkModeSingleToneColor;
     private int mDarkModeBackgroundColor;
@@ -317,12 +318,16 @@ public class BatteryMeterView extends LinearLayout implements
     }
 
     private void updatePercentText() {
-        if (mBatteryController != null && mBatteryPercentView != null) {
-            if (!mShowEstimate || mCharging) {
-                setPercentTextAtCurrentLevel();
-            } else {
-                mBatteryController.getEstimatedTimeRemainingString(this::onEstimateFetchComplete);
-            }
+        if (mBatteryPercentView != null) {
+            // Use the high voltage symbol ⚡ (u26A1 unicode) but prevent the system
+            // to load its emoji colored variant with the uFE0E flag
+            String bolt = "\u26A1\uFE0E";
+            CharSequence mChargeIndicator =
+                    mCharging && mDrawable.getMeterStyle() == BatteryMeterDrawableBase.BATTERY_STYLE_TEXT
+                    ? (bolt + " ") : "";
+            mBatteryPercentView.setText(mChargeIndicator +
+                    NumberFormat.getPercentInstance().format(mLevel / 100f));
+			mBatteryPercentView.setTypeface(tf);
         }
     }
 
@@ -418,7 +423,7 @@ public class BatteryMeterView extends LinearLayout implements
             final Resources res = getContext().getResources();
             final int startPadding = res.getDimensionPixelSize(R.dimen.battery_level_padding_start);
             mBatteryPercentView.setPaddingRelative(
-                    getMeterStyle() == BatteryMeterDrawableBase.BATTERY_STYLE_TEXT ? 0 : startPadding,
+                    mDrawable.getMeterStyle() == BatteryMeterDrawableBase.BATTERY_STYLE_TEXT ? 0 : startPadding,
                     0, 0, 0);
         }
 
@@ -646,5 +651,6 @@ public class BatteryMeterView extends LinearLayout implements
         if (child == mBatteryPercentView) {
             post(() -> updatePercentSize());
         }
+        updatePercentText();
     }
 }
