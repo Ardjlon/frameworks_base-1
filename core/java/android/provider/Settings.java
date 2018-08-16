@@ -4175,6 +4175,13 @@ public final class Settings {
         public static final Validator BATTERY_LIGHT_ENABLED_VALIDATOR =
                 BOOLEAN_VALIDATOR;
 
+         /**
+         * Whether to show the battery info on the lockscreen while charging
+         * @hide
+         */
+        public static final String LOCKSCREEN_BATTERY_INFO = "lockscreen_battery_info";
+
+
         /**
          * The time in ms to keep the button backlight on after pressing a button.
          * A value of 0 will keep the buttons on for as long as the screen is on.
