@@ -848,8 +848,8 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener,
                 final boolean superChargeStatus = intent.getBooleanExtra(EXTRA_SUPER_CHARGER, false);
                 final Message msg = mHandler.obtainMessage(
                         MSG_BATTERY_UPDATE, new BatteryStatus(status, level, plugged, health,
-                                maxChargingMicroAmp, maxChargingMicroVolt, dashChargeStatus, turboPowerStatus, maxChargingMicroWatt,
-				superChargeStatus, temperature));
+                                maxChargingMicroAmp, maxChargingMicroVolt, maxChargingMicroWatt,
+				temperature));
                 mHandler.sendMessage(msg);
             } else if (TelephonyIntents.ACTION_SIM_STATE_CHANGED.equals(action)) {
                 SimData args = SimData.fromIntent(intent);
@@ -1054,14 +1054,14 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener,
         public final int maxChargingCurrent;
         public final int maxChargingVoltage;
         public final int maxChargingWattage;
-        public final boolean dashChargeStatus;
+       /** public final boolean dashChargeStatus;
         public final boolean turboPowerStatus;
-        public final boolean superChargeStatus;
+        public final boolean superChargeStatus;**/
         public final int temperature;
 
         public BatteryStatus(int status, int level, int plugged, int health,
-                 int maxChargingCurrent, int maxChargingVoltage, int maxChargingWattage, boolean dashChargeStatus,
-		 boolean turboPowerStatus, boolean superChargeStatus, int temperature) {
+                 int maxChargingCurrent, int maxChargingVoltage, int maxChargingWattage,
+		 int temperature) {
             this.status = status;
             this.level = level;
             this.plugged = plugged;
@@ -1069,9 +1069,9 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener,
             this.maxChargingCurrent = maxChargingCurrent;
             this.maxChargingVoltage = maxChargingVoltage;
             this.maxChargingWattage = maxChargingWattage;
-            this.dashChargeStatus = dashChargeStatus;
+           /** this.dashChargeStatus = dashChargeStatus;
             this.turboPowerStatus = turboPowerStatus;
-            this.superChargeStatus = superChargeStatus;
+            this.superChargeStatus = superChargeStatus;**/
             this.temperature = temperature;
         }
 
@@ -1113,8 +1113,7 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener,
         }
 
         public final int getChargingSpeed(int slowThreshold, int fastThreshold) {
-            return (dashChargeStatus || turboPowerStatus || superChargeStatus) ? CHARGING_FAST :
-                    maxChargingWattage <= 0 ? CHARGING_UNKNOWN :
+            return  maxChargingWattage <= 0 ? CHARGING_UNKNOWN :
                     maxChargingWattage < slowThreshold ? CHARGING_SLOWLY :
                     maxChargingWattage > fastThreshold ? CHARGING_FAST :
                     CHARGING_REGULAR;
@@ -1837,19 +1836,19 @@ public class KeyguardUpdateMonitor implements TrustManager.TrustListener,
         }
 
         // change in dash charging while plugged in
-        if (nowPluggedIn && current.dashChargeStatus != old.dashChargeStatus) {
-            return true;
-        }
+        //if (nowPluggedIn && current.dashChargeStatus != old.dashChargeStatus) {
+        //    return true;
+        //}
 
         // change in turbo power charging while plugged in
-        if (nowPluggedIn && current.turboPowerStatus != old.turboPowerStatus) {
-            return true;
-        }
+        //if (nowPluggedIn && current.turboPowerStatus != old.turboPowerStatus) {
+        //    return true;
+        //}
 
         // change in super charging while plugged in
-        if (nowPluggedIn && current.superChargeStatus != old.superChargeStatus) {
-            return true;
-        }
+        //if (nowPluggedIn && current.superChargeStatus != old.superChargeStatus) {
+        //    return true;
+        //}
 
         return false;
     }

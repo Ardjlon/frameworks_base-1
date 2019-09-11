@@ -51,7 +51,7 @@ public class AirplaneModeTile extends QSTileImpl<BooleanState> {
     private boolean mListening;
     private final ActivityStarter mActivityStarter;
     private final KeyguardMonitor mKeyguardMonitor;
-    private final Callback mCallback = new Callback();
+   /** private final Callback mCallback = new Callback();**/
 
     private final KeyguardMonitor mKeyguard;
     private final KeyguardCallback mKeyguardCallback = new KeyguardCallback();
