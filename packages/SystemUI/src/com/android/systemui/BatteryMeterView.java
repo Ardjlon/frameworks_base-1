@@ -327,7 +327,7 @@ public class BatteryMeterView extends LinearLayout implements
                     ? (bolt + " ") : "";
             mBatteryPercentView.setText(mChargeIndicator +
                     NumberFormat.getPercentInstance().format(mLevel / 100f));
-			mBatteryPercentView.setTypeface(tf);
+			//**mBatteryPercentView.setTypeface(tf);**/
         }
     }
 
