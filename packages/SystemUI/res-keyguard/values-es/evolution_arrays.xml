@@ -2,7 +2,7 @@
 <resources>
     <string-array name="type_clock_hours">
         <item>Doce</item>
-        <item>Uno</item>
+        <item>Una</item>
         <item>Dos</item>
         <item>Tres</item>
         <item>Cuatro</item>

@@ -36,8 +36,8 @@
 
     <!-- Custom text clock -->
     <dimen name="customtextclock_fontsize">38dp</dimen>
-    <dimen name="custom_clock_left_padding">55dp</dimen>
-    <dimen name="custom_clock_top_margin">62dp</dimen>
+    <dimen name="custom_clock_left_padding">7dp</dimen>
+    <dimen name="custom_clock_top_margin">45dp</dimen>
 
     <!-- Lock date font size parameters -->
     <dimen name="lock_date_font_size_1">1dp</dimen>

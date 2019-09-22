@@ -34,94 +34,94 @@
         <item>Once</item>
     </string-array>
     <string-array name="type_clock_minutes">
-        <item>En punto</item>
-        <item>Y Uno</item>
-        <item>Y Dos</item>
-        <item>Y Tres</item>
-        <item>Y Cuatro</item>
-        <item>Y Cinco</item>
-        <item>Y Seis</item>
-        <item>Y Siete</item>
-        <item>Y Ocho</item>
-        <item>Y Nueve</item>
-        <item>Y Diez</item>
-        <item>Y Once</item>
-        <item>Y Doce</item>
-        <item>Y Trece</item>
-        <item>Y Catorce</item>
-        <item>Y Cuarto</item>
-        <item>Y Dieciséis</item>
-        <item>Y Diecisiete</item>
-        <item>Y Dieciocho</item>
-        <item>Y Diecinueve</item>
-        <item>Y Veinte</item>
-        <item>Y Veintiuno</item>
-        <item>Y Veintidós</item>
-        <item>Y Veintitrés</item>
-        <item>Y Veinticuatro</item>
-        <item>Y Veinticinco</item>
-        <item>Y Veintiséis</item>
-        <item>Y Veintisiete</item>
-        <item>Y Veintiocho</item>
-        <item>Y Veintinueve</item>
-        <item>Y Media</item>
-        <item>Y Treinta
-Y Uno</item>
-        <item>Y Treinta
-Y Dos</item>
-        <item>Y Treinta
-Y Tres</item>
-        <item>Y Treinta
-Y Cuatro</item>
-        <item>Y Treinta
-Y Cinco</item>
-        <item>Y Treinta
-Y Seis</item>
-        <item>Y Treinta
-Y Siete</item>
-        <item>Y Treinta
-Y Ocho</item>
-        <item>Y Treinta
-Y Nueve</item>
-        <item>Y
-Cuarenta</item>
-        <item>Y Cuarenta
-Y Uno</item>
-        <item>Y Cuarenta
-Y Dos</item>
-        <item>Y Cuarenta
-Y Tres</item>
-        <item>Y Cuarenta
-Y Cuatro</item>
-        <item>Y Cuarenta
-Y Cinco</item>
-        <item>Y Cuarenta
-Y Seis</item>
-        <item>Y Cuarenta
-Y Siete</item>
-        <item>Y Cuarenta
-Y Ocho</item>
-        <item>Y Cuarenta
-Y Nueve</item>
-        <item>Y
-Cincuenta</item>
-        <item>Y Cincuenta
-Y Uno</item>
-        <item>Y Cincuenta
-Y Dos</item>
-        <item>Y Cincuenta
-Y Tres</item>
-        <item>Y Cincuenta
-Y Cuatro</item>
-        <item>Y Cincuenta
-Y Cinco</item>
-        <item>Y Cincuenta
-Y Seis</item>
-        <item>Y Cincuenta
-Y Siete</item>
-        <item>Y Cincuenta
-Y Ocho</item>
-        <item>Y Cincuenta
-Y Nueve</item>
+        <item>en punto</item>
+        <item>y uno</item>
+        <item>y dos</item>
+        <item>y tres</item>
+        <item>y cuatro</item>
+        <item>y cinco</item>
+        <item>y seis</item>
+        <item>y siete</item>
+        <item>y ocho</item>
+        <item>y nueve</item>
+        <item>y diez</item>
+        <item>y once</item>
+        <item>y doce</item>
+        <item>y trece</item>
+        <item>y catorce</item>
+        <item>y cuarto</item>
+        <item>y dieciséis</item>
+        <item>y diecisiete</item>
+        <item>y dieciocho</item>
+        <item>y diecinueve</item>
+        <item>y veinte</item>
+        <item>y veintiuno</item>
+        <item>y veintidós</item>
+        <item>y veintitrés</item>
+        <item>y veinticuatro</item>
+        <item>y veinticinco</item>
+        <item>y veintiséis</item>
+        <item>y veintisiete</item>
+        <item>y veintiocho</item>
+        <item>y veintinueve</item>
+        <item>y media</item>
+        <item>treinta
+y uno</item>
+        <item>treinta
+y dos</item>
+        <item>treinta
+y tres</item>
+        <item>treinta
+y cuatro</item>
+        <item>treinta
+y cinco</item>
+        <item>treinta
+y seis</item>
+        <item>treinta
+y siete</item>
+        <item>treinta
+y ocho</item>
+        <item>treinta
+y nueve</item>
+        <item>y
+cuarenta</item>
+        <item>cuarenta
+y uno</item>
+        <item>cuarenta
+y dos</item>
+        <item>cuarenta
+y tres</item>
+        <item>cuarenta
+y cuatro</item>
+        <item>cuarenta
+y cinco</item>
+        <item>cuarenta
+y seis</item>
+        <item>cuarenta
+y siete</item>
+        <item>cuarenta
+y ocho</item>
+        <item>cuarenta
+y nueve</item>
+        <item>y
+cincuenta</item>
+        <item>cincuenta
+y uno</item>
+        <item>cincuenta
+y dos</item>
+        <item>cincuenta
+y tres</item>
+        <item>cincuenta
+y cuatro</item>
+        <item>cincuenta
+y cinco</item>
+        <item>cincuenta
+y seis</item>
+        <item>cincuenta
+y siete</item>
+        <item>cincuenta
+y ocho</item>
+        <item>cincuenta
+y nueve</item>
     </string-array>
 </resources>
