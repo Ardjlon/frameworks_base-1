@@ -20,10 +20,10 @@
 -->
 <resources>
     <plurals name="type_clock_header">
-        <item quantity="other"><annotation name="color">It’s</annotation>\"
+        <item quantity="other"><annotation name="color">Son las</annotation>\"
 ^1
 ^2\"</item>
-        <item quantity="one"><annotation name="color">It’s</annotation>\"
+        <item quantity="one"><annotation name="color">Son la</annotation>\"
 ^1
 ^2\"</item>
     </plurals>
