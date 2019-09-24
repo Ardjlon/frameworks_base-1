@@ -5897,6 +5897,20 @@ public final class Settings {
         public static final Validator INCREASING_RING_RAMP_UP_TIME_VALIDATOR =
                 ANY_STRING_VALIDATOR;
 
+        /**
+         * Which kind of style you might want to see on Recents UI
+         * 0 - Pie Recents (Quickstep)
+         * 1 - Oreo Recents (SystemUI)
+         * 2 - Grid Recents (SystemUI)
+         * 3 - Android Go Recents (SystemUI)
+         * @hide
+         */
+        public static final String RECENTS_LAYOUT_STYLE  = "recents_layout_style";
+
+        /** @hide */
+        public static final Validator RECENTS_COMPONENT_VALIDATOR =
+                new SettingsValidators.InclusiveIntegerRangeValidator(0, 1);
+
         /** End of Evolution X system settings**/
 
         /**

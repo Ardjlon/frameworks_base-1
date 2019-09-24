@@ -266,6 +266,11 @@ class RecentTasks {
         }
     }
 
+    private boolean isPieRecentsEnabled() {
+       return Settings.System.getInt(mService.mContext.getContentResolver(),
+                      Settings.System.RECENTS_LAYOUT_STYLE, 0) == 0;
+    }
+
     /**
      * @return whether the current caller has the same uid as the recents component.
      */
