@@ -122,16 +122,16 @@
     <color name="kg_widget_pager_gradient">#ffffffff</color>
 
     <!-- LockPatternView -->
-    <color name="lock_pattern_view_regular_color">#ffffffff</color>
-    <color name="lock_pattern_view_success_color">#ffffffff</color>
+    <color name="lock_pattern_view_regular_color">@color/accent_device_default_light</color>
+    <color name="lock_pattern_view_success_color">@color/accent_device_default_light</color>
 
     <!-- FaceLock -->
     <color name="facelock_spotlight_mask">#CC000000</color>
 
-    <color name="micro_text_light">#434343</color>
+    <color name="micro_text_light">@color/accent_device_default_light</color>
 
-    <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
-    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+    <drawable name="notification_template_icon_bg">@color/accent_device_default_light</drawable>
+    <drawable name="notification_template_icon_low_bg">@color/accent_device_default_light</drawable>
     <drawable name="notification_template_divider">#29000000</drawable>
     <drawable name="notification_template_divider_media">#29ffffff</drawable>
     <color name="notification_primary_text_color_light">@color/primary_text_default_material_light</color>
@@ -159,7 +159,7 @@
     <color name="accessibility_focus_highlight">#bf39b500</color>
     <color name="autofilled_highlight">#4dffeb3b</color>
 
-    <color name="system_notification_accent_color">#ff607D8B</color>
+    <color name="system_notification_accent_color">@color/accent_device_default_light</color>
 
     <!-- Default user icon colors -->
     <color name="user_icon_1">#ff00bcd4</color><!-- cyan 500 -->

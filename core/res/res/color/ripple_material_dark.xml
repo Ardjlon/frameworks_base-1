@@ -16,5 +16,5 @@
 
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:alpha="@dimen/highlight_alpha_material_dark"
-          android:color="@color/foreground_material_dark" />
+          android:color="@color/accent_device_default_light" />
 </selector>
