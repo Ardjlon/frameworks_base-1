@@ -124,13 +124,12 @@
         <item name="android:textAppearance">@*android:style/Notification.Header.Ambient</item>
         <item name="android:layout_gravity">top|center_horizontal</item>
         <item name="android:textSize">@*android:dimen/notification_ambient_title_text_size</item>
-        <item name="android:textColor">@*android:color/accent_device_default_light</item>
+        <item name="android:textColor">#ffffffff</item>
     </style>
 
     <style name="hybrid_notification_title">
         <item name="android:paddingEnd">4dp</item>
         <item name="android:textAppearance">@*android:style/TextAppearance.Material.Notification.Title</item>
-        <item name="android:textColor">@*android:color/accent_device_default_light</item>
     </style>
 
     <style name="hybrid_notification_text_ambient">
@@ -385,6 +384,7 @@
 
     <style name="TextAppearance.Material.Notification.HeaderTitle"
         parent="@*android:style/TextAppearance.Material.Notification.Info">
+        <item name="android:textColor">@*android:color/accent_device_default_light</item>
     </style>
 
     <style name="SearchPanelCircle">
@@ -473,17 +473,17 @@
 
     <style name="TextAppearance.NotificationInfo">
         <item name="android:fontFamily">sans-serif</item>
-        <item name="android:textColor">@*android:color/accent_device_default_light</item>
+        <item name="android:textColor">@*android:color/theme_text1</item>
     </style>
 
     <style name="TextAppearance.NotificationInfo.Primary">
-        <item name="android:textColor">@*android:color/theme_text1</item>
+        <item name="android:textColor">@*android:color/accent_device_default_light</item>
         <item name="android:textSize">16sp</item>
         <item name="android:alpha">0.87</item>
     </style>
 
     <style name="TextAppearance.NotificationInfo.Confirmation">
-        <item name="android:textColor">@*android:color/theme_text1</item>
+        <item name="android:textColor">@*android:color/accent_device_default_light</item>
         <item name="android:textSize">14sp</item>
         <item name="android:alpha">0.87</item>
     </style>

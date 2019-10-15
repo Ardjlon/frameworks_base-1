@@ -165,4 +165,8 @@
 
     <!-- Logout button -->
     <color name="logout_button_bg_color">#ccffffff</color>
+
+
+    <color name="ripple_material_dark">@*android:color/accent_device_default_light</color>
+    <color name="ripple_material_light">@*android:color/accent_device_default_light</color>
 </resources>
