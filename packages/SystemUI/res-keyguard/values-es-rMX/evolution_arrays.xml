@@ -20,18 +20,18 @@
 -->
 <resources>
     <string-array name="type_clock_hours">
-        <item>Doce</item>
-        <item>Una</item>
-        <item>Dos</item>
-        <item>Tres</item>
-        <item>Cuatro</item>
-        <item>Cinco</item>
-        <item>Seis</item>
-        <item>Siete</item>
-        <item>Ocho</item>
-        <item>Nueve</item>
-        <item>Diez</item>
-        <item>Once</item>
+        <item>doce</item>
+        <item>una</item>
+        <item>dos</item>
+        <item>tres</item>
+        <item>cuatro</item>
+        <item>cinco</item>
+        <item>seis</item>
+        <item>siete</item>
+        <item>ocho</item>
+        <item>nueve</item>
+        <item>diez</item>
+        <item>once</item>
     </string-array>
     <string-array name="type_clock_minutes">
         <item>en punto</item>
